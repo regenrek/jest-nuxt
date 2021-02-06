@@ -16,12 +16,12 @@ module.exports = {
   ],
 
   // Test with nuxt only
-  globalSetup: './test/utils/nuxt_only_setup.js',
-  testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['/node_modules/', 'test/e2e/']
+  // globalSetup: './test/utils/nuxt_only_setup.js',
+  // testEnvironment: 'jsdom',
+  // testPathIgnorePatterns: ['/node_modules/', 'test/e2e/']
 
   // Test with puppeteer
-  // globalSetup: './test/utils/setup.js',
-  //globalTeardown: './test/utils/teardown.js',
-  //testEnvironment: './test/utils/puppeteer_environment.js'
+  globalSetup: './test/utils/setup.js',
+  globalTeardown: './test/utils/teardown.js',
+  testEnvironment: './test/utils/puppeteer_environment.js'
 }
