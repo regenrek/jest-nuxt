@@ -23,7 +23,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~assets/styles/main.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -42,6 +42,10 @@ export default {
   /*
    ** Build configuration
    */
+  postcss: {
+    parser: 'postcss-scss'
+  },
+
   build: {
     /*
      ** You can extend webpack config here
